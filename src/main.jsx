@@ -11,6 +11,7 @@ import { SignupForm } from './pages/SignupForm.jsx'
 import NotFound from './pages/NotFound.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
 import UserDetails from './pages/UserDetails.jsx'
+import User from './pages/User.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path:'/register',
     element:<SignupForm/>
+  },
+  {
+    path:"/users",
+    element:<User/>
   }
 ])
 
