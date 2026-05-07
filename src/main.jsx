@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
 import UserDetails from './pages/UserDetails.jsx'
 import User from './pages/User.jsx'
+import UserAxios from './pages/UsereAxios.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path:"/users",
     element:<User/>
+  },
+  {
+    path:"/useraxios",
+    element:<UserAxios/>
   }
 ])
 
