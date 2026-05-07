@@ -59,6 +59,19 @@ const router = createBrowserRouter([
     path:"/useraxios",
     element:<UserAxios/>
   }
+  ,
+  {
+    path:'/dashboard',
+   // lazy:()=>import('./pages/Dashboard') Component دا في حاله لو عاملين اسمه 
+   lazy: async () => {
+    const module = await import('./pages/Dashboard.jsx');
+    return { 
+    Component: module.default, //لو هعمله بالطريقه المعتاده ,هعمل كدا هنا 
+    loader: module.loader,
+    ErrorBoundary: module.ErrorBoundary,
+     };
+  }
+}
 ])
 
 

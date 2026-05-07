@@ -50,7 +50,7 @@ const UserAxios = () => {
 export default UserAxios;
 
 
-
+// you may make   file for axios instance and use it in all your components to avoid repeating the baseURL and other configurations
 // ممكن بدل لودنج نحط فيه skeleton UI او spinner from a library زي react-spinners or shadcn
 //to fetch users with id 
 
